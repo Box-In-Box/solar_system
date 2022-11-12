@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="euc-kr" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="solar_system.xsl"?>
+<root xmlns:xsi="http://widthwidthwidth.width3.org/2001/XMLSchema-instance" xsi:noNamespaceschemaLocation="solar_system.xsd">
+
+    <information>
+        <notice>태양계</notice>
+        <since>46억년 전 초신성 대폭발</since>
+        <text>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전한다.</text>
+        <image src="images/etc/system.gif" width="1200" height="675"/>
+    </information>
+
+    <planets>
+        <planet>    <!--자전 주기, 공전 주기-->
+            <name nameType="Korean">수성</name>
+            <name nameType="English">mercury</name>
+            <diameter>4,878</diameter>
+            <distance>57,900,000</distance>
+            <rotation_period>58.6</rotation_period>
+            <revolution_period timeType="days">87.97</revolution_period>
+            <image src="images/planets/mercury.png" width="480" height="360"/>
+        </planet>
+        
+        <planet>
+            <name nameType="Korean">금성</name>
+            <name nameType="English">venus</name>
+            <diameter>12,104</diameter>
+            <distance>108,200,000</distance>
+            <rotation_period>243</rotation_period>
+            <revolution_period timeType="days">224.7</revolution_period>
+            <image src="images/planets/venus.png" width="480" height="360"/>
+        </planet>
+
+        <planet>
+            <name nameType="Korean">지구</name>
+            <name nameType="English">earth</name>
+            <diameter>12,756</diameter>
+            <distance>149,600,000</distance>
+            <rotation_period>1</rotation_period>
+            <revolution_period timeType="days">365.26</revolution_period>
+            <image src="images/planets/earth.png" width="480" height="360"/>
+        </planet>
+
+        <planet>
+            <name nameType="Korean">화성</name>
+            <name nameType="English">mars</name>
+            <diameter>6,794</diameter>
+            <distance>228,000,000</distance>
+            <rotation_period>1.03</rotation_period>
+            <revolution_period timeType="years">1.88</revolution_period>
+            <image src="images/planets/mars.png" width="480" height="360"/>
+
+        </planet>
+
+        <planet>
+            <name nameType="Korean">목성</name>
+            <name nameType="English">jupiter</name>
+            <diameter>142,984</diameter>
+            <distance>778,300,000</distance>
+            <rotation_period>0.41</rotation_period>
+            <revolution_period timeType="years">11.86</revolution_period>
+            <image src="images/planets/jupiter.png" width="480" height="360"/>
+        </planet>
+
+        <planet>
+            <name nameType="Korean">토성</name>
+            <name nameType="English">saturn</name>
+            <diameter>120,536</diameter>
+            <distance>1,427,000,000</distance>
+            <rotation_period>0.45</rotation_period>
+            <revolution_period timeType="years">29.46</revolution_period>
+            <image src="images/planets/saturn.png" width="480" height="360"/>
+        </planet>
+
+        <planet>
+            <name nameType="Korean">천왕성</name>
+            <name nameType="English">uranus</name>
+            <diameter>51,118</diameter>
+            <distance>2,900,000,000</distance>
+            <rotation_period>0.72</rotation_period>
+            <revolution_period timeType="years">84.01</revolution_period>
+            <image src="images/planets/uranus.png" width="480" height="360"/>
+        </planet>
+
+        <planet>
+            <name nameType="Korean">해왕성</name>
+            <name nameType="English">neptune</name>
+            <diameter>49,528</diameter>
+            <distance>4,497,000,000</distance>
+            <rotation_period>0.67</rotation_period>
+            <revolution_period timeType="years">164.79</revolution_period>
+            <image src="images/planets/neptune.png" width="480" height="360"/>
+        </planet>
+
+        <planet>
+            <name nameType="Korean">명왕성</name>
+            <name nameType="English">pluto</name>
+            <diameter>2,300</diameter>
+            <distance>6,000,000,000</distance>
+            <rotation_period>6.39</rotation_period>
+            <revolution_period timeType="years">248.59</revolution_period>
+            <image src="images/planets/pluto.png" width="480" height="360"/>
+        </planet>
+    </planets>
+
+    <scientists>
+        <scientist>
+            <name nameType="Korean">케플러</name>
+            <name nameType="English">Kepler</name>
+            <name nameType="FullName">Johannes_Kepler</name>
+            <text>Kepler briefly worked with the great Danish observational astronomer, Tycho Brahe. Tycho was a great and extremely accurate observer, but he did't have the mathematical capacity to analyze all of the data he collected. After Tycho's death in 1601, Kepler was able to obtain Tycho's observations. Tycho's observations of planetary motion were the most accurate of the time (before the invention of the telescope!). Using these observations, Kepler discovered that the planets do not move in circles, as 2000 years of "Natural Philosophy" had taught. He discovered that they move in ellipses. A ellipse is a sort of squashed circle with a short diameter (the "minor axis") and a longer diameter (the "major axis"). He found that the Sun was positioned at one "focus" of the ellipse (there are two "foci", both located on the major axis). He also found that when the planets were nearer the sun in their orbits, they move faster than when they were farther from the sun. Many years later, he discovered that the farther a planet was from the sun, on the average, the longer it took for that planet to make one complete revolution. These three laws, stated mathematically by Kepler, are known as "Kepler's Laws of Orbital Motion." Kepler's Laws are still used today to predict the motions of planets, comets, asteroids, stars, galaxies, and spacecraft.</text>
+            <image src="images\scientists\Johannes_Kepler.jpg" width="220" height="309"/>
+        </scientist>
+
+        <scientist>
+            <name nameType="Korean">뉴턴</name>
+            <name nameType="English">Newidthton</name>
+            <name nameType="FullName">Isaac Newidthton</name>
+            <text>Closer planets revolve faster, more distant planets revolve slower. Why? The answer lies in how gravity works. The force of gravity is a measure of the pull between two bodies. This force depends on a few things. First, it depends on the mass of the sun and on the mass of the planet you are considering. The heavier the planet, the stronger the pull. If you double the planet's mass, gravity pulls twice as hard. On the other hand, the farther the planet is from the sun, the weaker the pull between the two. The force gets weaker quite rapidly. If you double the distance, the force is one-fourth. If you triple the separation, the force drops to one-ninth. Ten times the distance, one-hundredth the force. See the pattern? The force drops off with the square of the distance.</text>
+            <image src="images\scientists\Isaac_Newton.jpg" width="220" height="309"/>
+        </scientist>
+    </scientists>
+
+</root>
