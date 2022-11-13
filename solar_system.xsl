@@ -43,9 +43,15 @@
                     .planet {
                         display: inline-block;
                     }
+                    .planetsub {
+                        display: inline-block;
+                        margin: 0;
+                    }
                     .planet:hover {
-                        background: silver;
-                        border-radius: 50%;
+                        background-image: url('images/etc/select.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
                         cursor: pointer;
                     }
                     <!--Table-->
@@ -128,7 +134,7 @@
                 </h2>
             </div>
 
-            <xsl:for-each select="text">
+            <xsl:for-each select="description">
                 <div>
                     <h3>
                         <xsl:value-of select="."/>
@@ -147,39 +153,40 @@
     <xsl:template match="root/planets">
         <div class="main" align="center">
             <xsl:for-each select="planet">
-                <div class="planet">
-                    <h3 align="center"><xsl:value-of select="name[@nameType='Korean']"/>
-                    <br/>
+                <div class="planetsub">
+                    <h3 align="center"><xsl:value-of select="name[@nameType='Korean']"/><br/>
                     (<em><xsl:value-of select="translate(name[@nameType='English'],'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></em>)</h3>
-                    <xsl:choose>
-                        <xsl:when test="name[.='mercury']">
-                            <a href="https://ko.wikipedia.org/wiki/%EC%88%98%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='venus']">
-                            <a href="https://ko.wikipedia.org/wiki/%EA%B8%88%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='earth']">
-                            <a href="https://ko.wikipedia.org/wiki/%EC%A7%80%EA%B5%AC"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='mars']">
-                            <a href="https://ko.wikipedia.org/wiki/%ED%99%94%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='jupiter']">
-                            <a href="https://ko.wikipedia.org/wiki/%EB%AA%A9%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='saturn']">
-                            <a href="https://ko.wikipedia.org/wiki/%ED%86%A0%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='uranus']">
-                            <a href="https://ko.wikipedia.org/wiki/%EC%B2%9C%EC%99%95%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='neptune']">
-                            <a href="https://ko.wikipedia.org/wiki/%ED%95%B4%EC%99%95%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                        <xsl:when test="name[.='pluto']">
-                            <a href="https://ko.wikipedia.org/wiki/%EB%AA%85%EC%99%95%EC%84%B1"><xsl:apply-templates select="./image"/></a>
-                        </xsl:when>
-                    </xsl:choose>
+                    <div class="planet">
+                        <xsl:choose>
+                            <xsl:when test="name[.='mercury']">
+                                <a href="https://ko.wikipedia.org/wiki/%EC%88%98%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='venus']">
+                                <a href="https://ko.wikipedia.org/wiki/%EA%B8%88%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='earth']">
+                                <a href="https://ko.wikipedia.org/wiki/%EC%A7%80%EA%B5%AC"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='mars']">
+                                <a href="https://ko.wikipedia.org/wiki/%ED%99%94%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='jupiter']">
+                                <a href="https://ko.wikipedia.org/wiki/%EB%AA%A9%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='saturn']">
+                                <a href="https://ko.wikipedia.org/wiki/%ED%86%A0%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='uranus']">
+                                <a href="https://ko.wikipedia.org/wiki/%EC%B2%9C%EC%99%95%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='neptune']">
+                                <a href="https://ko.wikipedia.org/wiki/%ED%95%B4%EC%99%95%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                            <xsl:when test="name[.='pluto']">
+                                <a href="https://ko.wikipedia.org/wiki/%EB%AA%85%EC%99%95%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                            </xsl:when>
+                        </xsl:choose>
+                    </div>
                 </div>
             </xsl:for-each>
             <hr/>
@@ -202,8 +209,8 @@
                 <xsl:for-each select="planet">
                     <tr>
                         <td><xsl:value-of select="name"/></td>
-                        <td><xsl:value-of select="diameter"/>km</td>
-                        <td><xsl:value-of select="distance"/>km</td>
+                        <td><xsl:value-of select="format-number(diameter, ',###')"/>km</td>
+                        <td><xsl:value-of select="format-number(distance, ',###')"/>km</td>
                         <td><xsl:value-of select="rotation_period"/>일</td>
 
                         <xsl:choose>
@@ -247,6 +254,23 @@
                 </xsl:choose>
             </div>
         </xsl:for-each>
+    </xsl:template>
+
+    <!--행성 이미지-->
+    <xsl:template name="planetimage">
+        <img>
+            <xsl:attribute name="src">
+                <xsl:value-of select="image/@src"/>
+            </xsl:attribute>
+
+            <xsl:attribute name="width">
+                <xsl:value-of select="ceiling(image/@width div 2.5)"/>
+            </xsl:attribute>
+
+            <xsl:attribute name="height">
+                <xsl:value-of select="ceiling(image/@height div 2.5)"/>
+            </xsl:attribute>
+        </img>
     </xsl:template>
 
     <!--이미지-->

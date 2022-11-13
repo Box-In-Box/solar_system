@@ -5,7 +5,9 @@
     <information>
         <notice>태양계</notice>
         <since>46억년 전 초신성 대폭발</since>
-        <text>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전한다.</text>
+        <description>태양계란 태양의 영향이 미치는 공간과 그 공간에 있는 구성원을 통틀어 말한다.</description>
+        <description>구성원 : 태양, 여덟 개의 행성, 위성, 소행성, 혜성 등</description>
+        <description>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전한다.</description>
         <image src="images/etc/system.gif" width="1200" height="675"/>
     </information>
 
@@ -13,40 +15,44 @@
         <planet>    <!--자전 주기, 공전 주기-->
             <name nameType="Korean">수성</name>
             <name nameType="English">mercury</name>
-            <diameter>4,878</diameter>
-            <distance>57,900,000</distance>
+            <diameter>4878</diameter>
+            <distance>57900000</distance>
             <rotation_period>58.6</rotation_period>
             <revolution_period timeType="days">87.97</revolution_period>
+            <description>태양과 가장 가까이 위치하고 있으며, 표면온다가 높고, 태양계 행성중 가장 작아며, 대기와 물이 없어 풍화 침식이 일어나지 않는다.</description>
             <image src="images/planets/mercury.png" width="480" height="360"/>
         </planet>
         
         <planet>
             <name nameType="Korean">금성</name>
             <name nameType="English">venus</name>
-            <diameter>12,104</diameter>
-            <distance>108,200,000</distance>
+            <diameter>12104</diameter>
+            <distance>108200000</distance>
             <rotation_period>243</rotation_period>
             <revolution_period timeType="days">224.7</revolution_period>
+            <description>주요 대기 성분은 이산화탄소로, 두꺼운 이산화탄소 때문에 태양의 빛을 반사시켜 지구에서 잘 관측 된다. 지구와 크기가 비슷하지만 압력이 높고 황산구름으로 뒤덮여 있으며, 황산비가 내린다. 태양계 행성중 가전시간이 공전시간보다 길다.</description>
             <image src="images/planets/venus.png" width="480" height="360"/>
         </planet>
 
         <planet>
             <name nameType="Korean">지구</name>
             <name nameType="English">earth</name>
-            <diameter>12,756</diameter>
-            <distance>149,600,000</distance>
+            <diameter>12756</diameter>
+            <distance>149600000</distance>
             <rotation_period>1</rotation_period>
             <revolution_period timeType="days">365.26</revolution_period>
+            <description>인류가 있는 유일한 행성이며, 바다와 육지로 이루어져 있고 위성인 달을 가지고 있다.</description>
             <image src="images/planets/earth.png" width="480" height="360"/>
         </planet>
 
         <planet>
             <name nameType="Korean">화성</name>
             <name nameType="English">mars</name>
-            <diameter>6,794</diameter>
-            <distance>228,000,000</distance>
+            <diameter>6794</diameter>
+            <distance>228000000</distance>
             <rotation_period>1.03</rotation_period>
             <revolution_period timeType="years">1.88</revolution_period>
+            <description>표면이 산화철로 덮여있어 붉게 보인다. </description>
             <image src="images/planets/mars.png" width="480" height="360"/>
 
         </planet>
@@ -54,8 +60,8 @@
         <planet>
             <name nameType="Korean">목성</name>
             <name nameType="English">jupiter</name>
-            <diameter>142,984</diameter>
-            <distance>778,300,000</distance>
+            <diameter>142984</diameter>
+            <distance>778300000</distance>
             <rotation_period>0.41</rotation_period>
             <revolution_period timeType="years">11.86</revolution_period>
             <image src="images/planets/jupiter.png" width="480" height="360"/>
@@ -64,8 +70,8 @@
         <planet>
             <name nameType="Korean">토성</name>
             <name nameType="English">saturn</name>
-            <diameter>120,536</diameter>
-            <distance>1,427,000,000</distance>
+            <diameter>120536</diameter>
+            <distance>1427000000</distance>
             <rotation_period>0.45</rotation_period>
             <revolution_period timeType="years">29.46</revolution_period>
             <image src="images/planets/saturn.png" width="480" height="360"/>
@@ -74,8 +80,8 @@
         <planet>
             <name nameType="Korean">천왕성</name>
             <name nameType="English">uranus</name>
-            <diameter>51,118</diameter>
-            <distance>2,900,000,000</distance>
+            <diameter>51118</diameter>
+            <distance>2900000000</distance>
             <rotation_period>0.72</rotation_period>
             <revolution_period timeType="years">84.01</revolution_period>
             <image src="images/planets/uranus.png" width="480" height="360"/>
@@ -84,21 +90,11 @@
         <planet>
             <name nameType="Korean">해왕성</name>
             <name nameType="English">neptune</name>
-            <diameter>49,528</diameter>
-            <distance>4,497,000,000</distance>
+            <diameter>49528</diameter>
+            <distance>4497000000</distance>
             <rotation_period>0.67</rotation_period>
             <revolution_period timeType="years">164.79</revolution_period>
             <image src="images/planets/neptune.png" width="480" height="360"/>
-        </planet>
-
-        <planet>
-            <name nameType="Korean">명왕성</name>
-            <name nameType="English">pluto</name>
-            <diameter>2,300</diameter>
-            <distance>6,000,000,000</distance>
-            <rotation_period>6.39</rotation_period>
-            <revolution_period timeType="years">248.59</revolution_period>
-            <image src="images/planets/pluto.png" width="480" height="360"/>
         </planet>
     </planets>
 
