@@ -16,6 +16,8 @@
             <xs:sequence>
                 <xs:element name="notice" type="xs:string"/>
                 <xs:element name="since" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="image" type="xs:empty"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -31,7 +33,13 @@
     <xs:element name="planet">
         <xs:complexType>
             <xs:sequence>
-                
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="diameter" type="xs:integer"/>
+                <xs:element name="distance" type="xs:integer"/>
+                <xs:element name="rotation_period" type="xs:integer"/>
+                <xs:element name="revolution_period" type="xs:float"/>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="image" type="xs:empty"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -39,7 +47,17 @@
     <xs:element name="scientists">
         <xs:complexType>
             <xs:sequence>
-                
+                <xs:element ref="scientist"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="scientist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="image" type="xs:empty"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

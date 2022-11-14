@@ -1,0 +1,32 @@
+<!ELEMENT root (information, planets, scientists)>
+
+<!ELEMENT information (notice, since, description+, image)>
+
+<!ELEMENT planets (planet+)>
+<!ELEMENT planet (name+, diameter, distance, rotation_period, revolution_period, description+, image)>
+
+<!ELEMENT scientists (scientist+)>
+<!ELEMENT scientist (name+, description+, image)>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name nameType CDATA #REQUIRED>
+
+<!ELEMENT notice (#PCDATA)>
+<!ELEMENT since (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+
+<!ELEMENT diameter (#PCDATA)>
+<!ELEMENT distance (#PCDATA)>
+<!ELEMENT rotation_period (#PCDATA)>
+<!ELEMENT revolution_period (#PCDATA)>
+<!ATTLIST revolution_period timeType CDATA #REQUIRED>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image 
+    src CDATA #REQUIRED
+    height CDATA #REQUIRED
+    width CDATA #REQUIRED>
+
+<!ENTITY Johannes_Kepler_description SYSTEM "scientists/Johannes_Kepler/description.txt">
+    

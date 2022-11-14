@@ -239,7 +239,7 @@
                         </div>
 
                         <div>
-                            <h2><xsl:value-of select="text"/></h2>
+                            <h2><xsl:value-of select="description"/></h2>
                         </div>
                     </xsl:when>
                     <xsl:otherwise>
@@ -248,7 +248,7 @@
                         </div>
 
                         <div>
-                            <h2 style="text-align: right"><xsl:value-of select="text"/></h2>
+                            <h2 style="text-align: right"><xsl:value-of select="description"/></h2>
                         </div>
                     </xsl:otherwise>
                 </xsl:choose>
