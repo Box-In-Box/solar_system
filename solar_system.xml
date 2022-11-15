@@ -106,31 +106,31 @@
 
     <scientists>
         <scientist>
-            <name nameType="Korean">코페르<br/>니쿠스</name>
+            <name nameType="Korean">코페르니쿠스</name>
             <name nameType="English">Nikolaus Kopernikus</name>
             <description>&Nikolaus_Kopernikus_description;</description>
-            <image src="scientists\Nikolaus_Kopernikus\Nikolaus_Kopernikus.jpg" width="230" height="225"/>
+            <image src="scientists\Nikolaus_Kopernikus\Nikolaus_Kopernikus.jpg" width="256" height="350"/>
         </scientist>
 
         <scientist>
             <name nameType="Korean">갈릴레이</name>
             <name nameType="English">Galileo Galilei</name>
             <description>&Galileo_Galilei_description;</description>
-            <image src="scientists\Galileo_Galilei\Galileo_Galilei.jpg" width="261" height="320"/>
+            <image src="scientists\Galileo_Galilei\Galileo_Galilei.jpg" width="256" height="350"/>
         </scientist>
 
         <scientist>
             <name nameType="Korean">뉴턴</name>
             <name nameType="English">Isaac Newton</name>
             <description>&Isaac_Newton_description;</description>
-            <image src="scientists\Isaac_Newton\Isaac_Newton.jpg" width="220" height="309"/>
+            <image src="scientists\Isaac_Newton\Isaac_Newton.jpg" width="256" height="350"/>
         </scientist>
 
         <scientist>
             <name nameType="Korean">케플러</name>
             <name nameType="English">Johannes Kepler</name>
             <description>&Johannes_Kepler_description;</description>
-            <image src="scientists\Johannes_Kepler\Johannes_Kepler.jpg" width="220" height="309"/>
+            <image src="scientists\Johannes_Kepler\Johannes_Kepler.jpg" width="256" height="350"/>
         </scientist>
     </scientists>
 

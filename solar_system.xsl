@@ -58,7 +58,7 @@
                         margin: 0;
                     }
                     .planet:hover {
-                        background-image: url('images/etc/select.png');
+                        background-image: url('etc/select.png');
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
