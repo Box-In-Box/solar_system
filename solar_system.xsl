@@ -9,7 +9,7 @@
 
                 <style>
                     body {
-                        background-image: url('images/etc/galaxy.png');
+                        background-image: url('etc/galaxy.png');
                         background-repeat: no-repeat;
                         background-size: cover;
                     }
@@ -25,7 +25,7 @@
 
                     <!--div-->
                     div { 
-                        margin : 10px;  
+                        margin : 10px;
                         <!--background-color : 333333-->        
                     }
                     .main {
@@ -38,6 +38,16 @@
                     }
                     .right {
                         float: right;
+                    }
+                    .name {
+                        padding-top: 1px;
+                        padding-bottom: 1px;
+                        background: silver;
+                        border-radius: 50%;
+                    }
+                    .description {
+                        white-space:pre;
+                        word-wrap: break-word;
                     }
                     <!--planet-->
                     .planet {
@@ -236,18 +246,26 @@
                     <xsl:when test="position()mod2=1">
                         <div class="left">
                             <div><xsl:apply-templates select="./image"/></div>
+                            <div class="name" align="center">
+                                    <h2>[&#10;<xsl:value-of select="name[@nameType='Korean']"/>&#10;]<br/>
+                                    (<xsl:value-of select="name[@nameType='English']"/>)</h2>
+                            </div>
                         </div>
 
-                        <div>
+                        <div class="description">
                             <h2><xsl:value-of select="description"/></h2>
                         </div>
                     </xsl:when>
                     <xsl:otherwise>
                         <div class="right">
                             <div><xsl:apply-templates select="./image"/></div>
+                            <div class="name" align="center">
+                                    <h2>[&#10;<xsl:value-of select="name[@nameType='Korean']"/>&#10;]<br/>
+                                    (<xsl:value-of select="name[@nameType='English']"/>)</h2>
+                            </div>
                         </div>
 
-                        <div>
+                        <div class="description">
                             <h2 style="text-align: right"><xsl:value-of select="description"/></h2>
                         </div>
                     </xsl:otherwise>

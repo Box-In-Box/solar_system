@@ -10,7 +10,7 @@
         <description>태양계란 태양의 영향이 미치는 공간과 그 공간에 있는 구성원을 통틀어 말한다.</description>
         <description>구성원 : 태양, 여덟 개의 행성, 위성, 소행성, 혜성 등</description>
         <description>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전한다.</description>
-        <image src="images/etc/system.gif" width="1200" height="675"/>
+        <image src="etc/system.gif" width="1200" height="675"/>
     </information>
 
     <planets>
@@ -22,7 +22,7 @@
             <rotation_period>58.6</rotation_period>
             <revolution_period timeType="days">87.97</revolution_period>
             <description>태양과 가장 가까이 위치하고 있으며, 표면온다가 높고, 태양계 행성중 가장 작아며, 대기와 물이 없어 풍화 침식이 일어나지 않는다.</description>
-            <image src="images/planets/mercury.png" width="480" height="360"/>
+            <image src="planets/mercury.png" width="480" height="360"/>
         </planet>
         
         <planet>
@@ -33,7 +33,7 @@
             <rotation_period>243</rotation_period>
             <revolution_period timeType="days">224.7</revolution_period>
             <description>주요 대기 성분은 이산화탄소로, 두꺼운 이산화탄소 때문에 태양의 빛을 반사시켜 지구에서 잘 관측 된다. 지구와 크기가 비슷하지만 압력이 높고 황산구름으로 뒤덮여 있으며, 황산비가 내린다. 태양계 행성중 가전시간이 공전시간보다 길다.</description>
-            <image src="images/planets/venus.png" width="480" height="360"/>
+            <image src="planets/venus.png" width="480" height="360"/>
         </planet>
 
         <planet>
@@ -44,7 +44,7 @@
             <rotation_period>1</rotation_period>
             <revolution_period timeType="days">365.26</revolution_period>
             <description>인류가 있는 유일한 행성이며, 바다와 육지로 이루어져 있고 위성인 달을 가지고 있다.</description>
-            <image src="images/planets/earth.png" width="480" height="360"/>
+            <image src="planets/earth.png" width="480" height="360"/>
         </planet>
 
         <planet>
@@ -55,7 +55,7 @@
             <rotation_period>1.03</rotation_period>
             <revolution_period timeType="years">1.88</revolution_period>
             <description>표면이 산화철로 덮여있어 붉게 보인다. </description>
-            <image src="images/planets/mars.png" width="480" height="360"/>
+            <image src="planets/mars.png" width="480" height="360"/>
 
         </planet>
 
@@ -67,7 +67,7 @@
             <rotation_period>0.41</rotation_period>
             <revolution_period timeType="years">11.86</revolution_period>
             <description/>
-            <image src="images/planets/jupiter.png" width="480" height="360"/>
+            <image src="planets/jupiter.png" width="480" height="360"/>
         </planet>
 
         <planet>
@@ -78,7 +78,7 @@
             <rotation_period>0.45</rotation_period>
             <revolution_period timeType="years">29.46</revolution_period>
             <description/>
-            <image src="images/planets/saturn.png" width="480" height="360"/>
+            <image src="planets/saturn.png" width="480" height="360"/>
         </planet>
 
         <planet>
@@ -89,7 +89,7 @@
             <rotation_period>0.72</rotation_period>
             <revolution_period timeType="years">84.01</revolution_period>
             <description/>
-            <image src="images/planets/uranus.png" width="480" height="360"/>
+            <image src="planets/uranus.png" width="480" height="360"/>
         </planet>
 
         <planet>
@@ -100,25 +100,37 @@
             <rotation_period>0.67</rotation_period>
             <revolution_period timeType="years">164.79</revolution_period>
             <description/>
-            <image src="images/planets/neptune.png" width="480" height="360"/>
+            <image src="planets/neptune.png" width="480" height="360"/>
         </planet>
     </planets>
 
     <scientists>
         <scientist>
-            <name nameType="Korean">케플러</name>
-            <name nameType="English">Kepler</name>
-            <name nameType="FullName">Johannes_Kepler</name>
-            <description>&Johannes_Kepler_description;</description>
-            <image src="images\scientists\Johannes_Kepler.jpg" width="220" height="309"/>
+            <name nameType="Korean">코페르<br/>니쿠스</name>
+            <name nameType="English">Nikolaus Kopernikus</name>
+            <description>&Nikolaus_Kopernikus_description;</description>
+            <image src="scientists\Nikolaus_Kopernikus\Nikolaus_Kopernikus.jpg" width="230" height="225"/>
+        </scientist>
+
+        <scientist>
+            <name nameType="Korean">갈릴레이</name>
+            <name nameType="English">Galileo Galilei</name>
+            <description>&Galileo_Galilei_description;</description>
+            <image src="scientists\Galileo_Galilei\Galileo_Galilei.jpg" width="261" height="320"/>
         </scientist>
 
         <scientist>
             <name nameType="Korean">뉴턴</name>
-            <name nameType="English">Newidthton</name>
-            <name nameType="FullName">Isaac Newidthton</name>
-            <description>Closer planets revolve faster, more distant planets revolve slower. Why? The answer lies in how gravity works. The force of gravity is a measure of the pull between two bodies. This force depends on a few things. First, it depends on the mass of the sun and on the mass of the planet you are considering. The heavier the planet, the stronger the pull. If you double the planet's mass, gravity pulls twice as hard. On the other hand, the farther the planet is from the sun, the weaker the pull between the two. The force gets weaker quite rapidly. If you double the distance, the force is one-fourth. If you triple the separation, the force drops to one-ninth. Ten times the distance, one-hundredth the force. See the pattern? The force drops off with the square of the distance.</description>
-            <image src="images\scientists\Isaac_Newton.jpg" width="220" height="309"/>
+            <name nameType="English">Isaac Newton</name>
+            <description>&Isaac_Newton_description;</description>
+            <image src="scientists\Isaac_Newton\Isaac_Newton.jpg" width="220" height="309"/>
+        </scientist>
+
+        <scientist>
+            <name nameType="Korean">케플러</name>
+            <name nameType="English">Johannes Kepler</name>
+            <description>&Johannes_Kepler_description;</description>
+            <image src="scientists\Johannes_Kepler\Johannes_Kepler.jpg" width="220" height="309"/>
         </scientist>
     </scientists>
 

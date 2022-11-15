@@ -27,6 +27,8 @@
     src CDATA #REQUIRED
     height CDATA #REQUIRED
     width CDATA #REQUIRED>
-
-<!ENTITY Johannes_Kepler_description SYSTEM "scientists/Johannes_Kepler/description.txt">
     
+<!ENTITY Nikolaus_Kopernikus_description SYSTEM "scientists/Nikolaus_Kopernikus/description.txt">
+<!ENTITY Galileo_Galilei_description SYSTEM "scientists/Galileo_Galilei/description.txt">
+<!ENTITY Isaac_Newton_description SYSTEM "scientists/Isaac_Newton/description.txt">
+<!ENTITY Johannes_Kepler_description SYSTEM "scientists/Johannes_Kepler/description.txt">
