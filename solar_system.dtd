@@ -1,6 +1,6 @@
 <!ELEMENT root (information, planets, scientists)>
 
-<!ELEMENT information (notice, since, description+, image)>
+<!ELEMENT information (notice, since, description+, image+)>
 
 <!ELEMENT planets (planet+)>
 <!ELEMENT planet (name+, diameter, distance, rotation_period, revolution_period, description+, image)>

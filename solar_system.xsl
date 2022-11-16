@@ -13,25 +13,78 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                     }
+
                     <!--Text Color-->
-                    h1 { color : FFFFFF; 
-                        font-size: 300%;}
+                    h1 { color : FFFFFF; font-size: 300%;}
                     h2 { color : FFFFFF; }
                     h3 { color : FFFFFF; }
                     h4 { color : FFFFFF; }
                     h5 { color : FFFFFF; }
                     h6 { color : FFFFFF; }
                     p { color : FFFFFF; }
+                    a { color: FFFFFF; }
+
+                    <!--Logo-->
+                    .logo {
+                        margin: 0;
+                        margin-left: 20px;
+                    }
+                    .logoName {
+                        display: inline-block;
+                        text-align: center;
+                        vertical-align: bottom;
+                    }
+                    
+                    <!--Maue-->
+                    .menu {
+                        width: 800px;
+                        overflow: hidden;
+                        position: absolute;
+                        left: 50%;
+                        margin-top: 30px;
+                        margin-left:-400px;
+                    }
+                    .meueDiv {
+                        padding-bottom: 250px;
+                        align: center;
+                    }
+
+                    .menu > li {
+                        width: 20%;
+                        float: left;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 30px;
+                    }
+
+                    .submenu > li {
+                        line-height: 50px;
+                        background-color: #333333;
+                        font-size: 20px;
+                    }
+
+                    .submenu {
+                        height: 0px;
+                        overflow: hidden;
+                    }
+
+                    .menu > li:hover {
+                        background-color: #333333;
+                        transition-duration: 0.5s;
+                    }
+
+                    .menu > li:hover .submenu {
+                        height: 200px;
+                        transition-duration: 1s;
+                    }
 
                     <!--div-->
                     div { 
-                        margin : 10px;
-                        <!--background-color : 333333-->        
+                        margin : 10px;   
                     }
                     .main {
                         margin : 20px;
                         overflow:auto;
-                        <!--background-color : 111111;-->
                     }
                     .left {
                         float: left;
@@ -39,16 +92,7 @@
                     .right {
                         float: right;
                     }
-                    .name {
-                        padding-top: 1px;
-                        padding-bottom: 1px;
-                        background: silver;
-                        border-radius: 50%;
-                    }
-                    .description {
-                        white-space:pre;
-                        word-wrap: break-word;
-                    }
+
                     <!--planet-->
                     .planet {
                         display: inline-block;
@@ -64,6 +108,22 @@
                         background-size: cover;
                         cursor: pointer;
                     }
+
+                    <!--scientist-->
+                    .name {
+                        padding-top: 1px;
+                        padding-bottom: 1px;
+                        background: silver;
+                        border-radius: 50%;
+                    }
+                    .scientist {
+                        margin-bottom: 100px;
+                    }
+                    .description {
+                        white-space:pre;
+                        word-wrap: break-word;
+                    }
+
                     <!--Table-->
                     .tStyle {
                         width: 900px;
@@ -116,23 +176,83 @@
             </head>
 
             <body>
+                <div class="meueDiv">
+                    <xsl:call-template name="meue"/>
+                </div>
                 <div class="main">
                     <xsl:apply-templates select="root/information"/>
                     <hr/>
                     <xsl:apply-templates select="root/planets"/>
                     <hr/>
                     <xsl:apply-templates select="root/scientists"/>
-
                 </div>
             </body>
         </html>
         
     </xsl:template>
 
+    <!--메뉴-->
+    <xsl:template name="meue">
+        <div class="left logo">
+            <xsl:apply-templates select="root/information/image[@id='logo']"/>
+        </div>
+
+        <div class="logoName">
+            <h1>BW_solar_system</h1>
+        </div>
+        
+        <ul class="menu">
+            <li>
+                <a href="#">태양계</a>
+                <ul class="submenu">
+                <li><a href="#">submenu01</a></li>
+                <li><a href="#">submenu02</a></li>
+                <li><a href="#">submenu03</a></li>
+                <li><a href="#">submenu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Planets">행성</a>
+                <ul class="submenu">
+                <li><a href="#">submenu01</a></li>
+                <li><a href="#">submenu02</a></li>
+                <li><a href="#">submenu03</a></li>
+                <li><a href="#">submenu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#PlanetsTable">행성 표</a>
+                <ul class="submenu">
+                <li><a href="#">submenu01</a></li>
+                <li><a href="#">submenu02</a></li>
+                <li><a href="#">submenu03</a></li>
+                <li><a href="#">submenu04</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Scientists">과학자</a>
+                <ul class="submenu">
+                <li><a href="#">코페르니쿠스</a></li>
+                <li><a href="#">갈릴레이</a></li>
+                <li><a href="#">뉴턴</a></li>
+                <li><a href="#">케플러</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">링크</a>
+                <ul class="submenu">
+                <li><a href="#">submenu01</a></li>
+                <li><a href="#">submenu02</a></li>
+                <li><a href="#">submenu03</a></li>
+                <li><a href="#">submenu04</a></li>
+                </ul>
+            </li>
+        </ul>
+    </xsl:template>
+
     <!--정보-->
     <xsl:template match="root/information">
         <div class="main">
-
             <div>
                 <h1 align="center">태양계</h1>
             </div>
@@ -153,14 +273,14 @@
             </xsl:for-each>
         
             <div align="center">
-                <xsl:apply-templates select="./image"/>
+                <xsl:apply-templates select="./image[@id='system']"/>
             </div>
-
         </div>
     </xsl:template>
 
     <!--행성-->
     <xsl:template match="root/planets">
+        <a name="Planets"></a>
         <div class="main" align="center">
             <xsl:for-each select="planet">
                 <div class="planetsub">
@@ -206,6 +326,7 @@
 
     <!--행성 표-->
     <xsl:template name="planetsTable">
+        <a name="PlanetsTable"></a>
         <div class="main" align="center">
             <table class="tStyle" align="center">
                 <tr>
@@ -240,8 +361,9 @@
 
     <!--과학자-->
     <xsl:template match="root/scientists">
+        <a name="Scientists"></a>
         <xsl:for-each select="scientist">
-            <div class="main">
+            <div class="main scientist">
                 <xsl:choose>
                     <xsl:when test="position()mod2=1">
                         <div class="left">

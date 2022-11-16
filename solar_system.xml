@@ -10,7 +10,8 @@
         <description>태양계란 태양의 영향이 미치는 공간과 그 공간에 있는 구성원을 통틀어 말한다.</description>
         <description>구성원 : 태양, 여덟 개의 행성, 위성, 소행성, 혜성 등</description>
         <description>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전한다.</description>
-        <image src="etc/system.gif" width="1200" height="675"/>
+        <image id="logo" src="etc/logo.gif" width="100" height="100"/>
+        <image id="system" src="etc/system.gif" width="1200" height="675"/>
     </information>
 
     <planets>
