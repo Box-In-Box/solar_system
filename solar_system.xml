@@ -12,6 +12,9 @@
         <description>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전한다.</description>
         <image id="logo" src="etc/logo.gif" width="100" height="100"/>
         <image id="system" src="etc/system.gif" width="1200" height="675"/>
+        <links>
+            <link name="우주의 끝을 찾아서">잠안올 때 듣고 자던 수면제</link>
+        </links>
     </information>
 
     <planets>
@@ -132,6 +135,10 @@
             <name nameType="English">Johannes Kepler</name>
             <description>&Johannes_Kepler_description;</description>
             <image src="scientists\Johannes_Kepler\Johannes_Kepler.jpg" width="256" height="350"/>
+            <subImg>
+                <image src="scientists\Johannes_Kepler\Kepler_2nd_law.gif" width="487" height="301"/>
+                <image src="scientists\Johannes_Kepler\Kepler_3rd_law.gif" width="250" height="374"/>
+            </subImg>
         </scientist>
     </scientists>
 

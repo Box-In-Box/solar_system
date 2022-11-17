@@ -15,14 +15,14 @@
                     }
 
                     <!--Text Color-->
-                    h1 { color : FFFFFF; font-size: 300%;}
-                    h2 { color : FFFFFF; }
-                    h3 { color : FFFFFF; }
-                    h4 { color : FFFFFF; }
-                    h5 { color : FFFFFF; }
-                    h6 { color : FFFFFF; }
-                    p { color : FFFFFF; }
-                    a { color: FFFFFF; }
+                    h1, h2, h3, h4, h5, h6, p, a { color: FFFFFF; }
+
+                    .mainText {
+                        font-size: 300%;
+                    }
+                    .scientistText {
+                        color: 111111;
+                    }
 
                     <!--Logo-->
                     .logo {
@@ -45,7 +45,7 @@
                         margin-left:-400px;
                     }
                     .meueDiv {
-                        padding-bottom: 250px;
+                        padding-bottom: 150px;
                         align: center;
                     }
 
@@ -57,25 +57,9 @@
                         font-size: 30px;
                     }
 
-                    .submenu > li {
-                        line-height: 50px;
-                        background-color: #333333;
-                        font-size: 20px;
-                    }
-
-                    .submenu {
-                        height: 0px;
-                        overflow: hidden;
-                    }
-
                     .menu > li:hover {
                         background-color: #333333;
                         transition-duration: 0.5s;
-                    }
-
-                    .menu > li:hover .submenu {
-                        height: 200px;
-                        transition-duration: 1s;
                     }
 
                     <!--div-->
@@ -113,10 +97,14 @@
                     .name {
                         padding-top: 1px;
                         padding-bottom: 1px;
-                        background: silver;
+                        background: FFFFFF;
                         border-radius: 50%;
                     }
                     .scientist {
+                        margin : 0;
+                    }
+                    .noMargin {
+                        
                         margin-bottom: 100px;
                     }
                     .description {
@@ -185,6 +173,10 @@
                     <xsl:apply-templates select="root/planets"/>
                     <hr/>
                     <xsl:apply-templates select="root/scientists"/>
+                    <hr/>
+                    <xsl:apply-templates select="root/information/links"/>
+                    <hr/>
+                    <h3>2022_XML_PROJECT</h3>
                 </div>
             </body>
         </html>
@@ -198,54 +190,24 @@
         </div>
 
         <div class="logoName">
-            <h1>BW_solar_system</h1>
+            <h1 class="mainText">BW_solar_system</h1>
         </div>
         
         <ul class="menu">
             <li>
                 <a href="#">태양계</a>
-                <ul class="submenu">
-                <li><a href="#">submenu01</a></li>
-                <li><a href="#">submenu02</a></li>
-                <li><a href="#">submenu03</a></li>
-                <li><a href="#">submenu04</a></li>
-                </ul>
             </li>
             <li>
                 <a href="#Planets">행성</a>
-                <ul class="submenu">
-                <li><a href="#">submenu01</a></li>
-                <li><a href="#">submenu02</a></li>
-                <li><a href="#">submenu03</a></li>
-                <li><a href="#">submenu04</a></li>
-                </ul>
             </li>
             <li>
-                <a href="#PlanetsTable">행성 표</a>
-                <ul class="submenu">
-                <li><a href="#">submenu01</a></li>
-                <li><a href="#">submenu02</a></li>
-                <li><a href="#">submenu03</a></li>
-                <li><a href="#">submenu04</a></li>
-                </ul>
+                <a href="#PlanetsTable">행성차트</a>
             </li>
             <li>
                 <a href="#Scientists">과학자</a>
-                <ul class="submenu">
-                <li><a href="#">코페르니쿠스</a></li>
-                <li><a href="#">갈릴레이</a></li>
-                <li><a href="#">뉴턴</a></li>
-                <li><a href="#">케플러</a></li>
-                </ul>
             </li>
             <li>
-                <a href="#">링크</a>
-                <ul class="submenu">
-                <li><a href="#">submenu01</a></li>
-                <li><a href="#">submenu02</a></li>
-                <li><a href="#">submenu03</a></li>
-                <li><a href="#">submenu04</a></li>
-                </ul>
+                <a href="#Links">링크</a>
             </li>
         </ul>
     </xsl:template>
@@ -369,31 +331,43 @@
                         <div class="left">
                             <div><xsl:apply-templates select="./image"/></div>
                             <div class="name" align="center">
-                                    <h2>[&#10;<xsl:value-of select="name[@nameType='Korean']"/>&#10;]<br/>
+                                    <h2 class="scientistText">[&#10;<xsl:value-of select="name[@nameType='Korean']"/>&#10;]<br/>
                                     (<xsl:value-of select="name[@nameType='English']"/>)</h2>
                             </div>
                         </div>
 
                         <div class="description">
                             <h2><xsl:value-of select="description"/></h2>
+                            <div class="noMargin" align="center"><xsl:apply-templates select="./subImg/image"/></div>
                         </div>
                     </xsl:when>
                     <xsl:otherwise>
                         <div class="right">
                             <div><xsl:apply-templates select="./image"/></div>
                             <div class="name" align="center">
-                                    <h2>[&#10;<xsl:value-of select="name[@nameType='Korean']"/>&#10;]<br/>
+                                    <h2 class="scientistText">[&#10;<xsl:value-of select="name[@nameType='Korean']"/>&#10;]<br/>
                                     (<xsl:value-of select="name[@nameType='English']"/>)</h2>
                             </div>
                         </div>
 
                         <div class="description">
                             <h2 style="text-align: right"><xsl:value-of select="description"/></h2>
+                            <div class="noMargin" align="center"><xsl:apply-templates select="./subImg/image"/></div>
                         </div>
                     </xsl:otherwise>
                 </xsl:choose>
             </div>
         </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="root/information/links">
+        <a name="Links"></a>
+        <div class="main">
+            <h1>Links</h1>
+            <xsl:for-each select="link">
+                    <h2><a href="https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7"><xsl:value-of select="./@name"/></a></h2>
+            </xsl:for-each>
+        </div>
     </xsl:template>
 
     <!--행성 이미지-->

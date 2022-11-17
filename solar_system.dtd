@@ -1,12 +1,17 @@
 <!ELEMENT root (information, planets, scientists)>
 
-<!ELEMENT information (notice, since, description+, image+)>
+<!ELEMENT information (notice, since, description+, image+, links)>
+
+<!ELEMENT links (link+)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link name CDATA #REQUIRED>
 
 <!ELEMENT planets (planet+)>
 <!ELEMENT planet (name+, diameter, distance, rotation_period, revolution_period, description+, image)>
 
 <!ELEMENT scientists (scientist+)>
-<!ELEMENT scientist (name+, description+, image)>
+<!ELEMENT scientist (name+, description+, image, subImg)>
+<!ELEMENT subImg (image+)>
 
 <!ELEMENT name (#PCDATA)>
 <!ATTLIST name nameType CDATA #REQUIRED>
