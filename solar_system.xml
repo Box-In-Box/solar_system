@@ -7,13 +7,13 @@
     <information>
         <notice>태양계</notice>
         <since>46억년 전 초신성 대폭발</since>
-        <description>태양계란 태양의 영향이 미치는 공간과 그 공간에 있는 구성원을 통틀어 말한다.</description>
-        <description>구성원 : 태양, 여덟 개의 행성, 위성, 소행성, 혜성 등</description>
-        <description>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전한다.</description>
+        <description>&des1;</description>
+        <description>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전합니다.</description>
         <image id="logo" src="etc/logo.gif" width="100" height="100"/>
         <image id="system" src="etc/system.gif" width="1200" height="675"/>
         <links>
-            <link name="우주의 끝을 찾아서">잠안올 때 듣고 자던 수면제</link>
+            <link name="우주의 끝을 찾아서">https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7</link>
+            <link name="태양계 정리 블로그">https://blog.naver.com/skydh_no1/222884790903</link>
         </links>
     </information>
 
@@ -128,6 +128,9 @@
             <name nameType="English">Isaac Newton</name>
             <description>&Isaac_Newton_description;</description>
             <image src="scientists\Isaac_Newton\Isaac_Newton.jpg" width="256" height="350"/>
+            <subImg>
+                <image src="scientists\Galileo_Galilei\equation.gif" width="123" height="57"/>
+            </subImg>
         </scientist>
 
         <scientist>
@@ -136,6 +139,7 @@
             <description>&Johannes_Kepler_description;</description>
             <image src="scientists\Johannes_Kepler\Johannes_Kepler.jpg" width="256" height="350"/>
             <subImg>
+                <image src="scientists\Johannes_Kepler\Kepler_1st_law.gif" width="464" height="304"/>
                 <image src="scientists\Johannes_Kepler\Kepler_2nd_law.gif" width="487" height="301"/>
                 <image src="scientists\Johannes_Kepler\Kepler_3rd_law.gif" width="250" height="374"/>
             </subImg>

@@ -18,6 +18,9 @@
                     h1, h2, h3, h4, h5, h6, p, a { color: FFFFFF; }
 
                     .mainText {
+                        font-size: 350%;
+                    }
+                    .logoText {
                         font-size: 300%;
                     }
                     .scientistText {
@@ -41,11 +44,11 @@
                         overflow: hidden;
                         position: absolute;
                         left: 50%;
-                        margin-top: 30px;
                         margin-left:-400px;
+                        padding-top: 30px;
                     }
                     .meueDiv {
-                        padding-bottom: 150px;
+                        padding-bottom: 100px;
                         align: center;
                     }
 
@@ -104,7 +107,6 @@
                         margin : 0;
                     }
                     .noMargin {
-                        
                         margin-bottom: 100px;
                     }
                     .description {
@@ -190,12 +192,18 @@
         </div>
 
         <div class="logoName">
-            <h1 class="mainText">BW_solar_system</h1>
+            <h1 class="logoText">BW_solar_system</h1>
         </div>
+
+        <div align="center" >
+                <h1 class="mainText">
+                    태양계 정리
+                </h1>
+            </div>
         
         <ul class="menu">
             <li>
-                <a href="#">태양계</a>
+                <a href="#Infomation">태양계</a>
             </li>
             <li>
                 <a href="#Planets">행성</a>
@@ -214,23 +222,18 @@
 
     <!--정보-->
     <xsl:template match="root/information">
+        <a name="Infomation"></a>
         <div class="main">
-            <div>
-                <h1 align="center">태양계</h1>
-            </div>
-
-            <div>
+            <div align="center">
                 <h2>
                     <xsl:value-of select="notice"/>는
-                    <xsl:value-of select="since"/>로 만들어 졌다.
+                    <xsl:value-of select="since"/>로 만들어 졌으며,
                 </h2>
             </div>
 
             <xsl:for-each select="description">
-                <div>
-                    <h3>
-                        <xsl:value-of select="."/>
-                    </h3>
+                <div class="description" align="center">
+                    <h2><xsl:value-of select="."/></h2>
                 </div>
             </xsl:for-each>
         
@@ -251,44 +254,53 @@
                     <div class="planet">
                         <xsl:choose>
                             <xsl:when test="name[.='mercury']">
-                                <a href="https://ko.wikipedia.org/wiki/%EC%88%98%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5133"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                             <xsl:when test="name[.='venus']">
-                                <a href="https://ko.wikipedia.org/wiki/%EA%B8%88%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5135"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                             <xsl:when test="name[.='earth']">
-                                <a href="https://ko.wikipedia.org/wiki/%EC%A7%80%EA%B5%AC"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5138"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                             <xsl:when test="name[.='mars']">
-                                <a href="https://ko.wikipedia.org/wiki/%ED%99%94%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5145"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                             <xsl:when test="name[.='jupiter']">
-                                <a href="https://ko.wikipedia.org/wiki/%EB%AA%A9%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5148"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                             <xsl:when test="name[.='saturn']">
-                                <a href="https://ko.wikipedia.org/wiki/%ED%86%A0%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5152"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                             <xsl:when test="name[.='uranus']">
-                                <a href="https://ko.wikipedia.org/wiki/%EC%B2%9C%EC%99%95%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5157"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                             <xsl:when test="name[.='neptune']">
-                                <a href="https://ko.wikipedia.org/wiki/%ED%95%B4%EC%99%95%EC%84%B1"><xsl:call-template name="planetimage"/></a>
-                            </xsl:when>
-                            <xsl:when test="name[.='pluto']">
-                                <a href="https://ko.wikipedia.org/wiki/%EB%AA%85%EC%99%95%EC%84%B1"><xsl:call-template name="planetimage"/></a>
+                                <a href="https://astro.kasi.re.kr/learning/pageView/5161"><xsl:call-template name="planetimage"/></a>
                             </xsl:when>
                         </xsl:choose>
                     </div>
                 </div>
-            </xsl:for-each>
-            <hr/>
-            <xsl:call-template name="planetsTable"/>
+            </xsl:for-each>    
         </div>
+
+        <hr/>
+        <xsl:call-template name="planetsTable"/>
     </xsl:template>
 
     <!--행성 표-->
     <xsl:template name="planetsTable">
         <a name="PlanetsTable"></a>
+        <h1 class="main">&lt; 행성들 특징 &gt;</h1>
+        <div class="main">
+            <h3>ㆍ수성 : 태양과 가장 가까운 행성 이며, 태양계 생성 중에서 가장 크기가 작으며 평균온도 179℃ 이지만, -183℃ ~ 427℃로 온도변화가 매우 심하다.</h3>
+            <h3>ㆍ금성 : 눈부시도록 밝은 금성의 모습 때문에 사랑과 미의 여신 비너스라는 이름을 가졌으며 지구와 비슷학 생겨서 쌍둥이 행성, 샛별이라는 별명도 있다.</h3>
+            <h3>ㆍ지구 : 달이라는 위성을 가지고 있으며, 생명채가 살 수 있는 최적화된 조건이 형성되어 있다.</h3>
+            <h3>ㆍ화성 : 지구와 비슷한 환경이 많이 관측 되면서 생물체가 살 수 있을 거다 라는 가설이 많이 나오게 되고, 지속적으로 연구가 진행중이다.</h3>
+            <h3>ㆍ목성 : 태양계의 모든 행성들을 다 합쳐도 목성보다 작을 만큼 거대한 별이며, 또한 태양계 행성 중 자전속도가 제일 빠르다.</h3>
+            <h3>ㆍ토성 : 행성 주변에 띠(고리)가 있는것이 특징이며, 고리의 너비는 약 7만km 이며, 얼음, 암석 등이 빽빽하게 연결 된 것이다.</h3>
+            <h3>ㆍ천왕성 : 시계방향으로 자전을 하며, 청왕성 역시 토성처럼 고리가 있지만 거리가 멀어 지구에서 쉽게 발견되지 못한다.</h3>
+            <h3>ㆍ해왕성 : 태양계에서 가장 먼 행성이며, 그로인해 가장 긴 공전시간을 가진다. 태양으로 받는 열에 비해 방출하는 열이 더 많아서 괸장히 추운 별이다.</h3>
+        </div>
         <div class="main" align="center">
             <table class="tStyle" align="center">
                 <tr>
@@ -365,7 +377,14 @@
         <div class="main">
             <h1>Links</h1>
             <xsl:for-each select="link">
-                    <h2><a href="https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7"><xsl:value-of select="./@name"/></a></h2>
+                    <xsl:choose>
+                        <xsl:when test="@name='우주의 끝을 찾아서'">
+                                <h2>ㆍ<a href="https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7"><xsl:value-of select="./@name"/></a></h2>
+                        </xsl:when>
+                        <xsl:when test="@name='태양계 정리 블로그'">
+                                <h2>ㆍ<a href="https://blog.naver.com/skydh_no1/222884790903"><xsl:value-of select="./@name"/></a></h2>
+                        </xsl:when>
+                    </xsl:choose>       
             </xsl:for-each>
         </div>
     </xsl:template>
