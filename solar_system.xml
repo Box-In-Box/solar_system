@@ -8,12 +8,14 @@
         <notice>태양계</notice>
         <since>46억년 전 초신성 대폭발</since>
         <description>&des1;</description>
-        <description>금성과 천왕성은 역행의 자전축을 가져 시계 방향으로 자전하고, 나머지는 반 시계 방향으로 자전합니다.</description>
+        <description>&des2;</description>
         <image id="logo" src="etc/logo.gif" width="100" height="100"/>
         <image id="system" src="etc/system.gif" width="1200" height="675"/>
         <links>
-            <link name="우주의 끝을 찾아서">https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7</link>
-            <link name="태양계 정리 블로그">https://blog.naver.com/skydh_no1/222884790903</link>
+            <link name="우주의 끝을 찾아서">잠 안올 때 듣던 영상</link>
+            <link name="태양계 행성 순서">행성들 특징 참고 블로그</link>
+            <link name="태양계 정리">행성 표 참고 블로그</link>
+            <link name="한국천문연구원">행성 이미지 링크 사이트</link>
         </links>
     </information>
 
@@ -25,7 +27,7 @@
             <distance>57900000</distance>
             <rotation_period>58.6</rotation_period>
             <revolution_period timeType="days">87.97</revolution_period>
-            <description>태양과 가장 가까이 위치하고 있으며, 표면온다가 높고, 태양계 행성중 가장 작아며, 대기와 물이 없어 풍화 침식이 일어나지 않는다.</description>
+            <description>태양과 가장 가까운 행성 이며, 태양계 생성 중에서 가장 크기가 작으며 평균온도 179℃ 이지만, -183℃ ~ 427℃로 온도변화가 매우 심하다.</description>
             <image src="planets/mercury.png" width="480" height="360"/>
         </planet>
         
@@ -36,7 +38,7 @@
             <distance>108200000</distance>
             <rotation_period>243</rotation_period>
             <revolution_period timeType="days">224.7</revolution_period>
-            <description>주요 대기 성분은 이산화탄소로, 두꺼운 이산화탄소 때문에 태양의 빛을 반사시켜 지구에서 잘 관측 된다. 지구와 크기가 비슷하지만 압력이 높고 황산구름으로 뒤덮여 있으며, 황산비가 내린다. 태양계 행성중 가전시간이 공전시간보다 길다.</description>
+            <description>시계방향으로 자전을 하며, 눈부시도록 밝은 금성의 모습 때문에 사랑과 미의 여신 비너스라는 이름을 가졌으며 지구와 비슷한 생겨서 쌍둥이 행성, 샛별이라는 별명도 있다.</description>
             <image src="planets/venus.png" width="480" height="360"/>
         </planet>
 
@@ -47,7 +49,7 @@
             <distance>149600000</distance>
             <rotation_period>1</rotation_period>
             <revolution_period timeType="days">365.26</revolution_period>
-            <description>인류가 있는 유일한 행성이며, 바다와 육지로 이루어져 있고 위성인 달을 가지고 있다.</description>
+            <description>달이라는 위성을 가지고 있으며, 생명체가 살 수 있는 최적화된 조건이 형성되어 있다.</description>
             <image src="planets/earth.png" width="480" height="360"/>
         </planet>
 
@@ -58,7 +60,7 @@
             <distance>228000000</distance>
             <rotation_period>1.03</rotation_period>
             <revolution_period timeType="years">1.88</revolution_period>
-            <description>표면이 산화철로 덮여있어 붉게 보인다. </description>
+            <description>지구와 비슷한 환경이 많이 관측 되면서 생물체가 살 수 있을 거다 라는 가설이 많이 나오게 되고, 지속적으로 연구가 진행중이다.</description>
             <image src="planets/mars.png" width="480" height="360"/>
 
         </planet>
@@ -70,7 +72,7 @@
             <distance>778300000</distance>
             <rotation_period>0.41</rotation_period>
             <revolution_period timeType="years">11.86</revolution_period>
-            <description/>
+            <description>태양계의 모든 행성들을 다 합쳐도 목성보다 작을 만큼 거대한 별이며, 또한 태양계 행성 중 자전속도가 제일 빠르다.</description>
             <image src="planets/jupiter.png" width="480" height="360"/>
         </planet>
 
@@ -81,7 +83,7 @@
             <distance>1427000000</distance>
             <rotation_period>0.45</rotation_period>
             <revolution_period timeType="years">29.46</revolution_period>
-            <description/>
+            <description>행성 주변에 띠(고리)가 있는것이 특징이며, 고리의 너비는 약 7만km 이며, 얼음, 암석 등이 빽빽하게 연결 된 것이다.</description>
             <image src="planets/saturn.png" width="480" height="360"/>
         </planet>
 
@@ -92,7 +94,7 @@
             <distance>2900000000</distance>
             <rotation_period>0.72</rotation_period>
             <revolution_period timeType="years">84.01</revolution_period>
-            <description/>
+            <description>시계방향으로 자전을 하며, 청왕성 역시 토성처럼 고리가 있지만 거리가 멀어 지구에서 쉽게 발견되지 못한다.</description>
             <image src="planets/uranus.png" width="480" height="360"/>
         </planet>
 
@@ -103,7 +105,7 @@
             <distance>4497000000</distance>
             <rotation_period>0.67</rotation_period>
             <revolution_period timeType="years">164.79</revolution_period>
-            <description/>
+            <description>태양계에서 가장 먼 행성이며, 그로인해 가장 긴 공전시간을 가진다. 태양으로 받는 열에 비해 방출하는 열이 더 많아서 굉장히 추운 별이다.</description>
             <image src="planets/neptune.png" width="480" height="360"/>
         </planet>
     </planets>

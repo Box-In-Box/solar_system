@@ -35,7 +35,7 @@
     width CDATA #REQUIRED>
 
 <!ENTITY des1 SYSTEM "etc/des1.txt">
-<!ENTITY des1 SYSTEM "etc/des2.txt">
+<!ENTITY des2 SYSTEM "etc/des2.txt">
     
 <!ENTITY Nikolaus_Kopernikus_description SYSTEM "scientists/Nikolaus_Kopernikus/description.txt">
 <!ENTITY Galileo_Galilei_description SYSTEM "scientists/Galileo_Galilei/description.txt">

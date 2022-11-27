@@ -15,7 +15,12 @@
                     }
 
                     <!--Text Color-->
-                    h1, h2, h3, h4, h5, h6, p, a { color: FFFFFF; }
+                    h1, h2, h3, h4, h5, h6, p { color: FFFFFF; }
+
+                    a {
+                        color: red;
+                        text-decoration: none;
+                    }
 
                     .mainText {
                         font-size: 350%;
@@ -44,7 +49,7 @@
                         overflow: hidden;
                         position: absolute;
                         left: 50%;
-                        margin-left:-400px;
+                        margin-left:-450px;
                         padding-top: 30px;
                     }
                     .meueDiv {
@@ -79,6 +84,10 @@
                     .right {
                         float: right;
                     }
+                    .description {
+                        white-space:pre;
+                        word-wrap: break-word;
+                    }
 
                     <!--planet-->
                     .planet {
@@ -108,11 +117,7 @@
                     }
                     .noMargin {
                         margin-bottom: 100px;
-                    }
-                    .description {
-                        white-space:pre;
-                        word-wrap: break-word;
-                    }
+                    }  
 
                     <!--Table-->
                     .tStyle {
@@ -209,7 +214,7 @@
                 <a href="#Planets">행성</a>
             </li>
             <li>
-                <a href="#PlanetsTable">행성차트</a>
+                <a href="#PlanetsTable">행성표</a>
             </li>
             <li>
                 <a href="#Scientists">과학자</a>
@@ -292,14 +297,9 @@
         <a name="PlanetsTable"></a>
         <h1 class="main">&lt; 행성들 특징 &gt;</h1>
         <div class="main">
-            <h3>ㆍ수성 : 태양과 가장 가까운 행성 이며, 태양계 생성 중에서 가장 크기가 작으며 평균온도 179℃ 이지만, -183℃ ~ 427℃로 온도변화가 매우 심하다.</h3>
-            <h3>ㆍ금성 : 눈부시도록 밝은 금성의 모습 때문에 사랑과 미의 여신 비너스라는 이름을 가졌으며 지구와 비슷학 생겨서 쌍둥이 행성, 샛별이라는 별명도 있다.</h3>
-            <h3>ㆍ지구 : 달이라는 위성을 가지고 있으며, 생명채가 살 수 있는 최적화된 조건이 형성되어 있다.</h3>
-            <h3>ㆍ화성 : 지구와 비슷한 환경이 많이 관측 되면서 생물체가 살 수 있을 거다 라는 가설이 많이 나오게 되고, 지속적으로 연구가 진행중이다.</h3>
-            <h3>ㆍ목성 : 태양계의 모든 행성들을 다 합쳐도 목성보다 작을 만큼 거대한 별이며, 또한 태양계 행성 중 자전속도가 제일 빠르다.</h3>
-            <h3>ㆍ토성 : 행성 주변에 띠(고리)가 있는것이 특징이며, 고리의 너비는 약 7만km 이며, 얼음, 암석 등이 빽빽하게 연결 된 것이다.</h3>
-            <h3>ㆍ천왕성 : 시계방향으로 자전을 하며, 청왕성 역시 토성처럼 고리가 있지만 거리가 멀어 지구에서 쉽게 발견되지 못한다.</h3>
-            <h3>ㆍ해왕성 : 태양계에서 가장 먼 행성이며, 그로인해 가장 긴 공전시간을 가진다. 태양으로 받는 열에 비해 방출하는 열이 더 많아서 괸장히 추운 별이다.</h3>
+            <xsl:for-each select="planet">
+                <h3>ㆍ<xsl:value-of select="name[@nameType='Korean']"/> : <xsl:value-of select="description"/></h3>
+            </xsl:for-each>
         </div>
         <div class="main" align="center">
             <table class="tStyle" align="center">
@@ -379,10 +379,16 @@
             <xsl:for-each select="link">
                     <xsl:choose>
                         <xsl:when test="@name='우주의 끝을 찾아서'">
-                                <h2>ㆍ<a href="https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7"><xsl:value-of select="./@name"/></a></h2>
+                                <h2>ㆍ<a href="https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
                         </xsl:when>
-                        <xsl:when test="@name='태양계 정리 블로그'">
-                                <h2>ㆍ<a href="https://blog.naver.com/skydh_no1/222884790903"><xsl:value-of select="./@name"/></a></h2>
+                        <xsl:when test="@name='태양계 행성 순서'">
+                                <h2>ㆍ<a href="https://blog.naver.com/skydh_no1/222884790903"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
+                        </xsl:when>
+                        <xsl:when test="@name='태양계 정리'">
+                                <h2>ㆍ<a href="https://m.blog.naver.com/jsy945/220893963552"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
+                        </xsl:when>
+                        <xsl:when test="@name='한국천문연구원'">
+                                <h2>ㆍ<a href="https://astro.kasi.re.kr/index"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
                         </xsl:when>
                     </xsl:choose>       
             </xsl:for-each>
