@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="euc-kr" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="solar_system.xsl"?>
-<!--<root xmlns:xsi="http://widthwidthwidth.width3.org/2001/XMLSchema-instance" xsi:noNamespaceschemaLocation="solar_system.xsd">-->
 <!DOCTYPE root SYSTEM "solar_system.dtd">
 <root>
 
@@ -131,7 +130,7 @@
             <description>&Isaac_Newton_description;</description>
             <image src="scientists\Isaac_Newton\Isaac_Newton.jpg" width="256" height="350"/>
             <subImg>
-                <image src="scientists\Galileo_Galilei\equation.gif" width="123" height="57"/>
+                <image src="scientists\Isaac_Newton\equation.gif" width="123" height="57"/>
             </subImg>
         </scientist>
 
