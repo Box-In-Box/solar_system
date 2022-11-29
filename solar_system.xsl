@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="euc-kr"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
 
     <xsl:template match="/">
         <html>
             <head>
-                <title>≈¬æÁ∞Ë «‡º∫ ¡§∏Æ</title>
+                <title>ÌÉúÏñëÍ≥Ñ ÌñâÏÑ± Ï†ïÎ¶¨</title>
 
                 <style>
                     body {
@@ -190,7 +190,7 @@
         
     </xsl:template>
 
-    <!--∏ﬁ¥∫-->
+    <!--Î©îÎâ¥-->
     <xsl:template name="meue">
         <div class="left logo">
             <xsl:apply-templates select="root/information/image[@id='logo']"/>
@@ -202,37 +202,37 @@
 
         <div align="center" >
                 <h1 class="mainText">
-                    ≈¬æÁ∞Ë ¡§∏Æ
+                    ÌÉúÏñëÍ≥Ñ Ï†ïÎ¶¨
                 </h1>
             </div>
         
         <ul class="menu">
             <li>
-                <a href="#Infomation">≈¬æÁ∞Ë</a>
+                <a href="#Infomation">ÌÉúÏñëÍ≥Ñ</a>
             </li>
             <li>
-                <a href="#Planets">«‡º∫</a>
+                <a href="#Planets">ÌñâÏÑ±</a>
             </li>
             <li>
-                <a href="#PlanetsTable">«‡º∫«•</a>
+                <a href="#PlanetsTable">ÌñâÏÑ±Ìëú</a>
             </li>
             <li>
-                <a href="#Scientists">∞˙«–¿⁄</a>
+                <a href="#Scientists">Í≥ºÌïôÏûê</a>
             </li>
             <li>
-                <a href="#Links">∏µ≈©</a>
+                <a href="#Links">ÎßÅÌÅ¨</a>
             </li>
         </ul>
     </xsl:template>
 
-    <!--¡§∫∏-->
+    <!--Ï†ïÎ≥¥-->
     <xsl:template match="root/information">
         <a name="Infomation"></a>
         <div class="main">
             <div align="center">
                 <h2>
-                    <xsl:value-of select="notice"/>¥¬
-                    <xsl:value-of select="since"/>∑Œ ∏∏µÈæÓ ¡≥¿∏∏Á,
+                    <xsl:value-of select="notice"/>Îäî
+                    <xsl:value-of select="since"/>Î°ú ÎßåÎì§Ïñ¥ Ï°åÏúºÎ©∞,
                 </h2>
             </div>
 
@@ -248,7 +248,7 @@
         </div>
     </xsl:template>
 
-    <!--«‡º∫-->
+    <!--ÌñâÏÑ±-->
     <xsl:template match="root/planets">
         <a name="Planets"></a>
         <div class="main" align="center">
@@ -292,23 +292,23 @@
         <xsl:call-template name="planetsTable"/>
     </xsl:template>
 
-    <!--«‡º∫ «•-->
+    <!--ÌñâÏÑ± Ìëú-->
     <xsl:template name="planetsTable">
         <a name="PlanetsTable"></a>
-        <h1 class="main">&lt; «‡º∫µÈ ∆Ø¬° &gt;</h1>
+        <h1 class="main">&lt; ÌñâÏÑ±Îì§ ÌäπÏßï &gt;</h1>
         <div class="main">
             <xsl:for-each select="planet">
-                <h3>§˝<xsl:value-of select="name[@nameType='Korean']"/> : <xsl:value-of select="description"/></h3>
+                <h3>„Üç<xsl:value-of select="name[@nameType='Korean']"/> : <xsl:value-of select="description"/></h3>
             </xsl:for-each>
         </div>
         <div class="main" align="center">
             <table class="tStyle" align="center">
                 <tr>
-                    <th>«‡º∫</th>
-                    <th>≈©±‚(¡ˆ∏ß)</th>
-                    <th>≈¬æÁ∞˙¿« ∞≈∏Æ</th>
-                    <th>¿⁄¿¸¡÷±‚</th>
-                    <th>∞¯¿¸¡÷±‚</th>
+                    <th>ÌñâÏÑ±</th>
+                    <th>ÌÅ¨Í∏∞(ÏßÄÎ¶Ñ)</th>
+                    <th>ÌÉúÏñëÍ≥ºÏùò Í±∞Î¶¨</th>
+                    <th>ÏûêÏ†ÑÏ£ºÍ∏∞</th>
+                    <th>Í≥µÏ†ÑÏ£ºÍ∏∞</th>
                 </tr>
 
                 <xsl:for-each select="planet">
@@ -316,14 +316,14 @@
                         <td><xsl:value-of select="name"/></td>
                         <td><xsl:value-of select="format-number(diameter, ',###')"/>km</td>
                         <td><xsl:value-of select="format-number(distance, ',###')"/>km</td>
-                        <td><xsl:value-of select="rotation_period"/>¿œ</td>
+                        <td><xsl:value-of select="rotation_period"/>Ïùº</td>
 
                         <xsl:choose>
                             <xsl:when test="revolution_period[@timeType='days']">
-                                <p><td><xsl:value-of select="revolution_period"/>¿œ</td></p>
+                                <p><td><xsl:value-of select="revolution_period"/>Ïùº</td></p>
                             </xsl:when>
                             <xsl:when test="revolution_period[@timeType='years']">
-                                <p><td><xsl:value-of select="revolution_period"/>≥‚</td></p>
+                                <p><td><xsl:value-of select="revolution_period"/>ÎÖÑ</td></p>
                             </xsl:when>
                         </xsl:choose>
                         
@@ -333,7 +333,7 @@
         </div>
     </xsl:template>
 
-    <!--∞˙«–¿⁄-->
+    <!--Í≥ºÌïôÏûê-->
     <xsl:template match="root/scientists">
         <a name="Scientists"></a>
         <xsl:for-each select="scientist">
@@ -378,24 +378,24 @@
             <h1>Links</h1>
             <xsl:for-each select="link">
                     <xsl:choose>
-                        <xsl:when test="@name='øÏ¡÷¿« ≥°¿ª √£æ∆º≠'">
-                                <h2>§˝<a href="https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
+                        <xsl:when test="@name='Ïö∞Ï£ºÏùò ÎÅùÏùÑ Ï∞æÏïÑÏÑú'">
+                                <h2>„Üç<a href="https://www.youtube.com/watch?v=hFKe4ovOJVQ&amp;list=WL&amp;index=7"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
                         </xsl:when>
-                        <xsl:when test="@name='≈¬æÁ∞Ë «‡º∫ º¯º≠'">
-                                <h2>§˝<a href="https://blog.naver.com/skydh_no1/222884790903"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
+                        <xsl:when test="@name='ÌÉúÏñëÍ≥Ñ ÌñâÏÑ± ÏàúÏÑú'">
+                                <h2>„Üç<a href="https://blog.naver.com/skydh_no1/222884790903"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
                         </xsl:when>
-                        <xsl:when test="@name='≈¬æÁ∞Ë ¡§∏Æ'">
-                                <h2>§˝<a href="https://m.blog.naver.com/jsy945/220893963552"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
+                        <xsl:when test="@name='ÌÉúÏñëÍ≥Ñ Ï†ïÎ¶¨'">
+                                <h2>„Üç<a href="https://m.blog.naver.com/jsy945/220893963552"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
                         </xsl:when>
-                        <xsl:when test="@name='«—±π√µπÆø¨±∏ø¯'">
-                                <h2>§˝<a href="https://astro.kasi.re.kr/index"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
+                        <xsl:when test="@name='ÌïúÍµ≠Ï≤úÎ¨∏Ïó∞Íµ¨Ïõê'">
+                                <h2>„Üç<a href="https://astro.kasi.re.kr/index"><xsl:value-of select="./@name"/></a> - <xsl:value-of select="."/></h2>
                         </xsl:when>
                     </xsl:choose>       
             </xsl:for-each>
         </div>
     </xsl:template>
 
-    <!--«‡º∫ ¿ÃπÃ¡ˆ-->
+    <!--ÌñâÏÑ± Ïù¥ÎØ∏ÏßÄ-->
     <xsl:template name="planetimage">
         <img>
             <xsl:attribute name="src">
@@ -412,7 +412,7 @@
         </img>
     </xsl:template>
 
-    <!--¿ÃπÃ¡ˆ-->
+    <!--Ïù¥ÎØ∏ÏßÄ-->
     <xsl:template match="image">
         <img>
             <xsl:attribute name="src">

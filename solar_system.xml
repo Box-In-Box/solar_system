@@ -1,131 +1,131 @@
-<?xml version="1.0" encoding="euc-kr" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="solar_system.xsl"?>
 <!DOCTYPE root SYSTEM "solar_system.dtd">
 <root>
 
     <information>
-        <notice>ÅÂ¾ç°è</notice>
-        <since>46¾ï³â Àü ÃÊ½Å¼º ´ëÆø¹ß</since>
+        <notice>íƒœì–‘ê³„</notice>
+        <since>46ì–µë…„ ì „ ì´ˆì‹ ì„± ëŒ€í­ë°œ</since>
         <description>&des1;</description>
         <description>&des2;</description>
         <image id="logo" src="etc/logo.gif" width="100" height="100"/>
         <image id="system" src="etc/system.gif" width="1200" height="675"/>
         <links>
-            <link name="¿ìÁÖÀÇ ³¡À» Ã£¾Æ¼­">Àá ¾È¿Ã ¶§ µè´ø ¿µ»ó</link>
-            <link name="ÅÂ¾ç°è Çà¼º ¼ø¼­">Çà¼ºµé Æ¯Â¡ Âü°í ºí·Î±×</link>
-            <link name="ÅÂ¾ç°è Á¤¸®">Çà¼º Ç¥ Âü°í ºí·Î±×</link>
-            <link name="ÇÑ±¹Ãµ¹®¿¬±¸¿ø">Çà¼º ÀÌ¹ÌÁö ¸µÅ© »çÀÌÆ®</link>
+            <link name="ìš°ì£¼ì˜ ëì„ ì°¾ì•„ì„œ">ìž  ì•ˆì˜¬ ë•Œ ë“£ë˜ ì˜ìƒ</link>
+            <link name="íƒœì–‘ê³„ í–‰ì„± ìˆœì„œ">í–‰ì„±ë“¤ íŠ¹ì§• ì°¸ê³  ë¸”ë¡œê·¸</link>
+            <link name="íƒœì–‘ê³„ ì •ë¦¬">í–‰ì„± í‘œ ì°¸ê³  ë¸”ë¡œê·¸</link>
+            <link name="í•œêµ­ì²œë¬¸ì—°êµ¬ì›">í–‰ì„± ì´ë¯¸ì§€ ë§í¬ ì‚¬ì´íŠ¸</link>
         </links>
     </information>
 
     <planets>
         <planet>
-            <name nameType="Korean">¼ö¼º</name>
+            <name nameType="Korean">ìˆ˜ì„±</name>
             <name nameType="English">mercury</name>
             <diameter>4878</diameter>
             <distance>57900000</distance>
             <rotation_period>58.6</rotation_period>
             <revolution_period timeType="days">87.97</revolution_period>
-            <description>ÅÂ¾ç°ú °¡Àå °¡±î¿î Çà¼º ÀÌ¸ç, ÅÂ¾ç°è »ý¼º Áß¿¡¼­ °¡Àå Å©±â°¡ ÀÛÀ¸¸ç Æò±Õ¿Âµµ 179¡É ÀÌÁö¸¸, -183¡É ~ 427¡É·Î ¿Âµµº¯È­°¡ ¸Å¿ì ½ÉÇÏ´Ù.</description>
+            <description>íƒœì–‘ê³¼ ê°€ìž¥ ê°€ê¹Œìš´ í–‰ì„± ì´ë©°, íƒœì–‘ê³„ ìƒì„± ì¤‘ì—ì„œ ê°€ìž¥ í¬ê¸°ê°€ ìž‘ìœ¼ë©° í‰ê· ì˜¨ë„ 179â„ƒ ì´ì§€ë§Œ, -183â„ƒ ~ 427â„ƒë¡œ ì˜¨ë„ë³€í™”ê°€ ë§¤ìš° ì‹¬í•˜ë‹¤.</description>
             <image src="planets/mercury.png" width="480" height="360"/>
         </planet>
         
         <planet>
-            <name nameType="Korean">±Ý¼º</name>
+            <name nameType="Korean">ê¸ˆì„±</name>
             <name nameType="English">venus</name>
             <diameter>12104</diameter>
             <distance>108200000</distance>
             <rotation_period>243</rotation_period>
             <revolution_period timeType="days">224.7</revolution_period>
-            <description>½Ã°è¹æÇâÀ¸·Î ÀÚÀüÀ» ÇÏ¸ç, ´«ºÎ½Ãµµ·Ï ¹àÀº ±Ý¼ºÀÇ ¸ð½À ¶§¹®¿¡ »ç¶û°ú ¹ÌÀÇ ¿©½Å ºñ³Ê½º¶ó´Â ÀÌ¸§À» °¡Á³À¸¸ç Áö±¸¿Í ºñ½ÁÇÑ »ý°Ü¼­ ½ÖµÕÀÌ Çà¼º, »ûº°ÀÌ¶ó´Â º°¸íµµ ÀÖ´Ù.</description>
+            <description>ì‹œê³„ë°©í–¥ìœ¼ë¡œ ìžì „ì„ í•˜ë©°, ëˆˆë¶€ì‹œë„ë¡ ë°ì€ ê¸ˆì„±ì˜ ëª¨ìŠµ ë•Œë¬¸ì— ì‚¬ëž‘ê³¼ ë¯¸ì˜ ì—¬ì‹  ë¹„ë„ˆìŠ¤ë¼ëŠ” ì´ë¦„ì„ ê°€ì¡Œìœ¼ë©° ì§€êµ¬ì™€ ë¹„ìŠ·í•œ ìƒê²¨ì„œ ìŒë‘¥ì´ í–‰ì„±, ìƒ›ë³„ì´ë¼ëŠ” ë³„ëª…ë„ ìžˆë‹¤.</description>
             <image src="planets/venus.png" width="480" height="360"/>
         </planet>
 
         <planet>
-            <name nameType="Korean">Áö±¸</name>
+            <name nameType="Korean">ì§€êµ¬</name>
             <name nameType="English">earth</name>
             <diameter>12756</diameter>
             <distance>149600000</distance>
             <rotation_period>1</rotation_period>
             <revolution_period timeType="days">365.26</revolution_period>
-            <description>´ÞÀÌ¶ó´Â À§¼ºÀ» °¡Áö°í ÀÖÀ¸¸ç, »ý¸íÃ¼°¡ »ì ¼ö ÀÖ´Â ÃÖÀûÈ­µÈ Á¶°ÇÀÌ Çü¼ºµÇ¾î ÀÖ´Ù.</description>
+            <description>ë‹¬ì´ë¼ëŠ” ìœ„ì„±ì„ ê°€ì§€ê³  ìžˆìœ¼ë©°, ìƒëª…ì²´ê°€ ì‚´ ìˆ˜ ìžˆëŠ” ìµœì í™”ëœ ì¡°ê±´ì´ í˜•ì„±ë˜ì–´ ìžˆë‹¤.</description>
             <image src="planets/earth.png" width="480" height="360"/>
         </planet>
 
         <planet>
-            <name nameType="Korean">È­¼º</name>
+            <name nameType="Korean">í™”ì„±</name>
             <name nameType="English">mars</name>
             <diameter>6794</diameter>
             <distance>228000000</distance>
             <rotation_period>1.03</rotation_period>
             <revolution_period timeType="years">1.88</revolution_period>
-            <description>Áö±¸¿Í ºñ½ÁÇÑ È¯°æÀÌ ¸¹ÀÌ °üÃø µÇ¸é¼­ »ý¹°Ã¼°¡ »ì ¼ö ÀÖÀ» °Å´Ù ¶ó´Â °¡¼³ÀÌ ¸¹ÀÌ ³ª¿À°Ô µÇ°í, Áö¼ÓÀûÀ¸·Î ¿¬±¸°¡ ÁøÇàÁßÀÌ´Ù.</description>
+            <description>ì§€êµ¬ì™€ ë¹„ìŠ·í•œ í™˜ê²½ì´ ë§Žì´ ê´€ì¸¡ ë˜ë©´ì„œ ìƒë¬¼ì²´ê°€ ì‚´ ìˆ˜ ìžˆì„ ê±°ë‹¤ ë¼ëŠ” ê°€ì„¤ì´ ë§Žì´ ë‚˜ì˜¤ê²Œ ë˜ê³ , ì§€ì†ì ìœ¼ë¡œ ì—°êµ¬ê°€ ì§„í–‰ì¤‘ì´ë‹¤.</description>
             <image src="planets/mars.png" width="480" height="360"/>
 
         </planet>
 
         <planet>
-            <name nameType="Korean">¸ñ¼º</name>
+            <name nameType="Korean">ëª©ì„±</name>
             <name nameType="English">jupiter</name>
             <diameter>142984</diameter>
             <distance>778300000</distance>
             <rotation_period>0.41</rotation_period>
             <revolution_period timeType="years">11.86</revolution_period>
-            <description>ÅÂ¾ç°èÀÇ ¸ðµç Çà¼ºµéÀ» ´Ù ÇÕÃÄµµ ¸ñ¼ºº¸´Ù ÀÛÀ» ¸¸Å­ °Å´ëÇÑ º°ÀÌ¸ç, ¶ÇÇÑ ÅÂ¾ç°è Çà¼º Áß ÀÚÀü¼Óµµ°¡ Á¦ÀÏ ºü¸£´Ù.</description>
+            <description>íƒœì–‘ê³„ì˜ ëª¨ë“  í–‰ì„±ë“¤ì„ ë‹¤ í•©ì³ë„ ëª©ì„±ë³´ë‹¤ ìž‘ì„ ë§Œí¼ ê±°ëŒ€í•œ ë³„ì´ë©°, ë˜í•œ íƒœì–‘ê³„ í–‰ì„± ì¤‘ ìžì „ì†ë„ê°€ ì œì¼ ë¹ ë¥´ë‹¤.</description>
             <image src="planets/jupiter.png" width="480" height="360"/>
         </planet>
 
         <planet>
-            <name nameType="Korean">Åä¼º</name>
+            <name nameType="Korean">í† ì„±</name>
             <name nameType="English">saturn</name>
             <diameter>120536</diameter>
             <distance>1427000000</distance>
             <rotation_period>0.45</rotation_period>
             <revolution_period timeType="years">29.46</revolution_period>
-            <description>Çà¼º ÁÖº¯¿¡ ¶ì(°í¸®)°¡ ÀÖ´Â°ÍÀÌ Æ¯Â¡ÀÌ¸ç, °í¸®ÀÇ ³Êºñ´Â ¾à 7¸¸km ÀÌ¸ç, ¾óÀ½, ¾Ï¼® µîÀÌ »ª»ªÇÏ°Ô ¿¬°á µÈ °ÍÀÌ´Ù.</description>
+            <description>í–‰ì„± ì£¼ë³€ì— ë (ê³ ë¦¬)ê°€ ìžˆëŠ”ê²ƒì´ íŠ¹ì§•ì´ë©°, ê³ ë¦¬ì˜ ë„ˆë¹„ëŠ” ì•½ 7ë§Œkm ì´ë©°, ì–¼ìŒ, ì•”ì„ ë“±ì´ ë¹½ë¹½í•˜ê²Œ ì—°ê²° ëœ ê²ƒì´ë‹¤.</description>
             <image src="planets/saturn.png" width="480" height="360"/>
         </planet>
 
         <planet>
-            <name nameType="Korean">Ãµ¿Õ¼º</name>
+            <name nameType="Korean">ì²œì™•ì„±</name>
             <name nameType="English">uranus</name>
             <diameter>51118</diameter>
             <distance>2900000000</distance>
             <rotation_period>0.72</rotation_period>
             <revolution_period timeType="years">84.01</revolution_period>
-            <description>½Ã°è¹æÇâÀ¸·Î ÀÚÀüÀ» ÇÏ¸ç, Ã»¿Õ¼º ¿ª½Ã Åä¼ºÃ³·³ °í¸®°¡ ÀÖÁö¸¸ °Å¸®°¡ ¸Ö¾î Áö±¸¿¡¼­ ½±°Ô ¹ß°ßµÇÁö ¸øÇÑ´Ù.</description>
+            <description>ì‹œê³„ë°©í–¥ìœ¼ë¡œ ìžì „ì„ í•˜ë©°, ì²­ì™•ì„± ì—­ì‹œ í† ì„±ì²˜ëŸ¼ ê³ ë¦¬ê°€ ìžˆì§€ë§Œ ê±°ë¦¬ê°€ ë©€ì–´ ì§€êµ¬ì—ì„œ ì‰½ê²Œ ë°œê²¬ë˜ì§€ ëª»í•œë‹¤.</description>
             <image src="planets/uranus.png" width="480" height="360"/>
         </planet>
 
         <planet>
-            <name nameType="Korean">ÇØ¿Õ¼º</name>
+            <name nameType="Korean">í•´ì™•ì„±</name>
             <name nameType="English">neptune</name>
             <diameter>49528</diameter>
             <distance>4497000000</distance>
             <rotation_period>0.67</rotation_period>
             <revolution_period timeType="years">164.79</revolution_period>
-            <description>ÅÂ¾ç°è¿¡¼­ °¡Àå ¸Õ Çà¼ºÀÌ¸ç, ±×·ÎÀÎÇØ °¡Àå ±ä °øÀü½Ã°£À» °¡Áø´Ù. ÅÂ¾çÀ¸·Î ¹Þ´Â ¿­¿¡ ºñÇØ ¹æÃâÇÏ´Â ¿­ÀÌ ´õ ¸¹¾Æ¼­ ±²ÀåÈ÷ Ãß¿î º°ÀÌ´Ù.</description>
+            <description>íƒœì–‘ê³„ì—ì„œ ê°€ìž¥ ë¨¼ í–‰ì„±ì´ë©°, ê·¸ë¡œì¸í•´ ê°€ìž¥ ê¸´ ê³µì „ì‹œê°„ì„ ê°€ì§„ë‹¤. íƒœì–‘ìœ¼ë¡œ ë°›ëŠ” ì—´ì— ë¹„í•´ ë°©ì¶œí•˜ëŠ” ì—´ì´ ë” ë§Žì•„ì„œ êµ‰ìž¥ížˆ ì¶”ìš´ ë³„ì´ë‹¤.</description>
             <image src="planets/neptune.png" width="480" height="360"/>
         </planet>
     </planets>
 
     <scientists>
         <scientist>
-            <name nameType="Korean">ÄÚÆä¸£´ÏÄí½º</name>
+            <name nameType="Korean">ì½”íŽ˜ë¥´ë‹ˆì¿ ìŠ¤</name>
             <name nameType="English">Nikolaus Kopernikus</name>
             <description>&Nikolaus_Kopernikus_description;</description>
             <image src="scientists\Nikolaus_Kopernikus\Nikolaus_Kopernikus.jpg" width="256" height="350"/>
         </scientist>
 
         <scientist>
-            <name nameType="Korean">°¥¸±·¹ÀÌ</name>
+            <name nameType="Korean">ê°ˆë¦´ë ˆì´</name>
             <name nameType="English">Galileo Galilei</name>
             <description>&Galileo_Galilei_description;</description>
             <image src="scientists\Galileo_Galilei\Galileo_Galilei.jpg" width="256" height="350"/>
         </scientist>
 
         <scientist>
-            <name nameType="Korean">´ºÅÏ</name>
+            <name nameType="Korean">ë‰´í„´</name>
             <name nameType="English">Isaac Newton</name>
             <description>&Isaac_Newton_description;</description>
             <image src="scientists\Isaac_Newton\Isaac_Newton.jpg" width="256" height="350"/>
@@ -135,7 +135,7 @@
         </scientist>
 
         <scientist>
-            <name nameType="Korean">ÄÉÇÃ·¯</name>
+            <name nameType="Korean">ì¼€í”ŒëŸ¬</name>
             <name nameType="English">Johannes Kepler</name>
             <description>&Johannes_Kepler_description;</description>
             <image src="scientists\Johannes_Kepler\Johannes_Kepler.jpg" width="256" height="350"/>
