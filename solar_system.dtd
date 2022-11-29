@@ -2,6 +2,10 @@
 
 <!ELEMENT information (notice, since, description+, image+, links)>
 
+<!ELEMENT notice (#PCDATA)>
+<!ELEMENT since (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
 <!ELEMENT links (link+)>
 <!ELEMENT link (#PCDATA)>
 <!ATTLIST link name CDATA #REQUIRED>
@@ -9,23 +13,18 @@
 <!ELEMENT planets (planet+)>
 <!ELEMENT planet (name+, diameter, distance, rotation_period, revolution_period, description+, image)>
 
+<!ELEMENT diameter (#PCDATA)>
+<!ELEMENT distance (#PCDATA)>
+<!ELEMENT rotation_period (#PCDATA)>
+<!ELEMENT revolution_period (#PCDATA)>
+<!ATTLIST revolution_period timeType CDATA #REQUIRED>
+
 <!ELEMENT scientists (scientist+)>
 <!ELEMENT scientist (name+, description+, image, subImg?)>
 <!ELEMENT subImg (image+)>
 
 <!ELEMENT name (#PCDATA)>
 <!ATTLIST name nameType CDATA #REQUIRED>
-
-<!ELEMENT notice (#PCDATA)>
-<!ELEMENT since (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-
-
-<!ELEMENT diameter (#PCDATA)>
-<!ELEMENT distance (#PCDATA)>
-<!ELEMENT rotation_period (#PCDATA)>
-<!ELEMENT revolution_period (#PCDATA)>
-<!ATTLIST revolution_period timeType CDATA #REQUIRED>
 
 <!ELEMENT image EMPTY>
 <!ATTLIST image
